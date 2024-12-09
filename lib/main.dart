@@ -14,6 +14,7 @@ class MyApp extends StatelessWidget {
         backgroundColor:  Colors.deepPurple,
         body: SafeArea(
             child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
           children: [
             CircleAvatar(
               radius: 50.0,
@@ -38,47 +39,17 @@ class MyApp extends StatelessWidget {
             Card(
               margin: EdgeInsets.all(15),
               color: Colors.white,
-              child: Row(
-                children: [
-                  Padding(
-                    padding: EdgeInsets.fromLTRB(10, 25, 25, 25),
-                    ),
-                   Icon(
-                      size: 30.0,
-                    color: Colors.deepPurple,
-                    Icons.phone,
-                  ),
-                  SizedBox(width: 10.0),
-                  Text(
-                    '+91 799436363996',
-                    style: TextStyle(
-                      fontSize: 22.0,
-                      color: Colors.deepPurple,
-                    ),
-                  ),
-                ],
+              child: ListTile(
+                leading: Icon(Icons.phone, size: 30.0, color: Colors.deepPurple,),
+                title: Text('+91 799436363996', style: TextStyle(fontSize: 18.0, color: Colors.deepPurple,),),
               ),
             ),
             Card(
               margin: EdgeInsets.all(15),
               color: Colors.white,
-              child: Row(
-                children: [
-                  Padding(padding: EdgeInsets.fromLTRB(10, 25, 25, 25),),
-                  Icon(
-                    size: 30.0,
-                    color: Colors.deepPurple,
-                    Icons.mail,
-                  ),
-                  SizedBox(width: 10.0),
-                  Text(
-                    'ashiqmuhammed@gmail.com',
-                    style: TextStyle(
-                      fontSize: 15.0,
-                      color: Colors.deepPurple,
-                    ),
-                  ),
-                ],
+              child: ListTile(
+                leading: Icon(Icons.email, size: 30.0, color: Colors.deepPurple,),
+                title: Text('ashiqmuhammed@gmail.com', style: TextStyle(fontSize: 18.0, color: Colors.deepPurple,),),
               ),
             )
           ],
