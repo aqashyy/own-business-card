@@ -60,6 +60,7 @@ flutter:
 
   assets:
     - images/profile.png
+    - images/app-screenshot.jpeg
   fonts:
     - family: SpaceMono
       fonts:
